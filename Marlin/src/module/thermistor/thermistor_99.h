@@ -22,6 +22,47 @@
 
 #pragma once
 
+// 100k hotend thermistor - CUSTOM CALIBRATION using external thermocouple
+
+const temp_entry_t temptable_99[] PROGMEM = {
+  { OV(1), 350 }, 
+  { OV(4), 340 }, 
+  { OV(6), 330 }, 
+  { OV(8), 320 }, 
+  { OV(11), 310 }, 
+  { OV(13), 300 }, 
+  { OV(15), 290 }, 
+  { OV(18), 280 }, 
+  { OV(21), 270 }, 
+  { OV(24), 260 }, 
+  { OV(29), 250 }, 
+  { OV(34), 240 }, 
+  { OV(41), 230 }, 
+  { OV(50), 220 }, 
+  { OV(60), 210 }, 
+  { OV(73), 200 }, 
+  { OV(89), 190 }, 
+  { OV(108), 180 }, 
+  { OV(137), 170 }, 
+  { OV(171), 160 }, 
+  { OV(209), 150 }, 
+  { OV(251), 140 }, 
+  { OV(309), 130 }, 
+  { OV(377), 120 }, 
+  { OV(453), 110 }, 
+  { OV(534), 100 }, 
+  { OV(616), 90 }, 
+  { OV(697), 80 }, 
+  { OV(772), 70 }, 
+  { OV(839), 60 }, 
+  { OV(895), 50 }, 
+  { OV(939), 40 }, 
+  { OV(970), 30 }, 
+  { OV(992), 20 }, 
+  { OV(1019), 0 }, 
+};
+
+/* // ORIGINAL FILE
 // 100k bed thermistor with a 10K pull-up resistor - made by $ buildroot/share/scripts/createTemperatureLookupMarlin.py --rp=10000
 
 const temp_entry_t temptable_99[] PROGMEM = {
@@ -62,3 +103,6 @@ const temp_entry_t temptable_99[] PROGMEM = {
   { OV(975.47),  10 }, // v=4.763   r=201020.458  res= 0.449 degC/count
   { OV(994.02),   0 }  // v=4.854   r=331567.870  res= 0.676 degC/count
 };
+
+*/
+
